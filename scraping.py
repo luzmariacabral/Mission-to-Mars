@@ -42,7 +42,7 @@ def mars_news(browser):
 
     # Add try/except for error handling
     try:
-        side_elem = news_soup.select_one('div.list_text')
+        slide_elem = news_soup.select_one('div.list_text')
         # Use the parent element to find the firest <a> tag and save as 'news_title'
         news_title = slide_elem.find('div', class_='content_title').get_text()
         # Use parent element to find the paragraph text
